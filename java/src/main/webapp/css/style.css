@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e6f0fa 0%, #fce4ec 100%);
+    min-height: 100vh;
+}
+
+.ozon-header {
+    background: #005bff;
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 15px rgba(0, 91, 255, 0.3);
+}
+
+.ozon-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ozon-logo span {
+    font-size: 32px;
+}
+
+.ozon-logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.ozon-nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.ozon-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.ozon-nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.ozon-nav a.active {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.ozon-container {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.ozon-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.ozon-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.ozon-table th {
+    background: #005bff;
+    color: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.ozon-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.ozon-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.ozon-table tr:hover {
+    background: #fce4ec;
+}
+
+.ozon-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #005bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.ozon-btn:hover {
+    background: #ff6b35;
+    transform: translateY(-2px);
+}
+
+.ozon-btn-print {
+    background: #28a745;
+    margin-bottom: 20px;
+}
+
+.ozon-btn-print:hover {
+    background: #218838;
+}
+
+.ozon-stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.ozon-stat-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    min-width: 130px;
+    transition: transform 0.3s;
+}
+
+.ozon-stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.ozon-stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff6b35;
+}
+
+.ozon-stat-label {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-util { background: #ff6b35; color: white; }
+.badge-ucenka { background: #005bff; color: white; }
+.badge-peresort { background: #17a2b8; color: white; }
+.badge-return { background: #28a745; color: white; }
+.badge-supplier { background: #6c757d; color: white; }
+
+.ozon-total {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #005bff;
+    font-size: 18px;
+}
+
+.ozon-signature {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+h2, h3 {
+    color: #005bff;
+    margin: 20px 0 15px 0;
+}
+
+.ozon-footer {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 12px;
+}
+
+.ozon-form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.ozon-form-group label {
+    width: 100px;
+    font-weight: bold;
+    color: #005bff;
+}
+
+.ozon-form-group input, .ozon-form-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.ozon-form-group input:focus {
+    outline: none;
+    border-color: #ff6b35;
+}
+
+.ozon-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.ozon-menu-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.ozon-menu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 91, 255, 0.15);
+}
+
+.ozon-menu-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.ozon-menu-card h3 {
+    color: #005bff;
+    margin-bottom: 8px;
+}
+
+.ozon-menu-card p {
+    color: #666;
+    font-size: 12px;
+}
+
+.ozon-filter-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ozon-filter-box input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
